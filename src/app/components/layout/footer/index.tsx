@@ -23,10 +23,10 @@ const Footer = () => {
           <div className="md:col-span-8 col-span-12 grid grid-cols-12 gap-4 px-4 sm:px-0">
             <div className="w-full lg:col-span-4 col-span-12">
               <h4 className="mb-4 text-lg text-white dark:text-white">
-                Address
+                Dirección
               </h4>
               <p className="mb-6 text-gray text-base">
-                Property Real estate 4263 Wilkinson Street Tennessee
+                Av. Aquiles Serdán 9, Centro, 81200 Los Mochis, Sinaloa.
               </p>
               <div className="flex items-center gap-2">
                 <a
@@ -82,49 +82,49 @@ const Footer = () => {
             </div>
             <div className="w-full lg:col-span-4 col-span-12">
               <h4 className="mb-4 text-lg text-white dark:text-white">
-                Quick Links
+                Accesos rápidos
               </h4>
               <ul>
                 <li>
-                  <Link href="/contact" className="mb-3 inline-block text-base text-gray hover:text-white">
-                    Contact Support
+                  <Link href="/" className="mb-3 inline-block text-base text-gray hover:text-white">
+                    Inicio
                   </Link>
                 </li>
                 <li>
                   <Link href="/properties/properties-list" className="mb-3 inline-block text-base text-gray hover:text-white">
-                    Properties
+                    Desarrollos
                   </Link>
                 </li>
                 <li>
-                  <Link href="/blogs" className="mb-3 inline-block text-base text-gray hover:text-white">
-                    Blog
+                  <Link href="/contact" className="mb-3 inline-block text-base text-gray hover:text-white">
+                    Contacto
                   </Link>
                 </li>
               </ul>
             </div>
             <div className="w-full lg:col-span-4 col-span-12">
               <h4 className="mb-4 text-lg text-white dark:text-white">
-                Popular Searches
+                Búsquedas populares
               </h4>
               <ul>
                 <li onClick={() => updateFilter('category', 'apartment')}>
                   <Link href="/properties/properties-list?category=apartment" className="mb-3 inline-block text-base text-gray hover:text-white">
-                    Apartment for Rent
+                    Terrenos en la playa
                   </Link>
                 </li>
                 <li onClick={() => updateFilter('category', 'house')}>
                   <Link href="/properties/properties-list?category=house" className="mb-3 inline-block text-base text-gray hover:text-white">
-                    House for Buy
+                    Terrenos en el río
                   </Link>
                 </li>
                 <li onClick={() => updateFilter('category', 'office')}>
                   <Link href="/properties/properties-list?category=office" className="mb-3 inline-block text-base text-gray hover:text-white">
-                    Offices for Buy
+                    Terrenos en Mazatlán
                   </Link>
                 </li>
                 <li onClick={() => updateFilter('category', 'shop')}>
                   <Link href="/properties/properties-list?category=shop" className="mb-3 inline-block text-base text-gray hover:text-white">
-                    Shop for Rent
+                    Terrenos en Oaxaca
                   </Link>
                 </li>
               </ul>
@@ -137,25 +137,25 @@ const Footer = () => {
           <div className="lg:max-w-45 max-w-full text-center lg:text-left mb-4 lg:mb-0">
             <div className="flex lg:flex-nowrap flex-wrap lg:flex-row lg:gap-11 gap-4 text-base sm:text-lg md:text-xl text-black text-opacity-50">
               <p className="text-white">
-                Phone :
-                <Link href="#" className="text-gray hover:text-white"> +(690) 2560 0020</Link>
+                Tel :
+                <Link href="#" className="text-gray hover:text-white"> (668) 168 8415</Link>
               </p>
               <p className="text-white">
                 Email :
-                <Link href="#" className="text-gray hover:text-white"> real@property.com</Link>
+                <Link href="#" className="text-gray hover:text-white"> AsesorAMG@gmail.com</Link>
               </p>
             </div>
           </div>
           <div className="max-w-lg w-full">
             <div className="flex justify-center lg:justify-end">
-              <p className="items-center flex mr-3 text-base sm:text-lg md:text-xl font-bold text-white">Newsletter</p>
+              <p className="items-center flex mr-3 text-base sm:text-lg md:text-xl font-bold text-white">¿Más información?</p>
               <input
                 type="text"
                 className="py-3 dark:bg-darkmode dark:text-gray !rounded-r-none border border-transparent dark:border-dark_border dark:focus:border-primary focus-visible:outline-none rounded-l-lg px-3 w-full sm:w-auto "
-                placeholder="Email address"
+                placeholder="Escribe aqui tu teléfono"
               />
               <button className="py-2 px-5 sm:px-9 bg-primary text-base text-white rounded-r-lg hover:bg-blue-700">
-                Subscribe
+                Contáctame
               </button>
             </div>
           </div>

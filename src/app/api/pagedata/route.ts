@@ -13,20 +13,20 @@ const features = [
     {
         id: 1,
         imgSrc: "/images/features/rating.svg",
-        title: "Great Experience",
-        description: "Letraset sheets containing Lorem Ipsum passages and more recently with desktop publishing Variou"
+        title: "Entrega inmediata",
+        description: "Nuestros terrenos están listos para ser adquiridos y desarrollados de inmediato, lo que le permite comenzar su proyecto sin demoras."
     },
     {
         id: 2,
         imgSrc: "/images/features/Give-Women's-Rights.svg",
-        title: "Great Experience",
-        description: "Letraset sheets containing Lorem Ipsum passages and more recently with desktop publishing Variou"
+        title: "Seguridad jurídica",
+        description: "La compra de su terreno está respaldada por un contrato legalmente vinculante que protege sus derechos como comprador."
     },
     {
         id: 3,
         imgSrc: "/images/features/live-chat.svg",
-        title: "Great Experience",
-        description: "Letraset sheets containing Lorem Ipsum passages and more recently with desktop publishing Variou"
+        title: "Atención personalizada",
+        description: "Nuestro equipo de atención al cliente está disponible para responder a sus preguntas y brindarle asesoramiento personalizado en cada etapa del proceso."
     }
 ];
 
@@ -47,11 +47,13 @@ const searchOptions = {
         { value:'', label: 'Nombre del desarrollo' },
         { value:'Nueva Camahuiroa', label: 'Nueva Camahuiroa' },
         { value:'Nuevo Paraíso', label: 'Nuevo Paraíso' },
-        { value:'Aldea Naay', label: 'Aldea Naay' },
-        { value:'Cartagena de Indias', label: 'Cartagena de Indias' },
+        { value:'Nuevo Orizaba', label: 'Nuevo Orizaba' },
+        { value:'Cartagena', label: 'Cartagena' },
         { value:'Nuevo Huatulco', label: 'Nuevo Huatulco' },
         { value:'Hacienda Mónaco', label: 'Hacienda Mónaco' },
+        { value:'Hacienda Nápoles 1', label: 'Hacienda Nápoles 1' },
         { value:'Hacienda Nápoles 2', label: 'Hacienda Nápoles 2' },
+        { value:'Hacienda Nápoles 3', label: 'Hacienda Nápoles 3' },
         { value:'Nuevo Celestino', label: 'Nuevo Celestino' },
     ],
     // Define other options similarly

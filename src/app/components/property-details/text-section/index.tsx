@@ -6,7 +6,9 @@ export default function TextSection() {
         <section className='py-0 dark:bg-darkmode'>
             <div className='max-w-4xl mx-auto text-center text-gray' data-aos='fade-up'>
                 <p className='text-base sm:text-lg md:text-xl lg:text-2xl px-4 sm:px-6 md:px-8'>
-                    Aenean facilisis, neque id sagittis volutpat, sapien nibh porttitor neque, et ullamcorper justo lectus tempus neque. Donec maximus dolor mauris, ut lacinia sem blandit eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+                    Imagina vivir en un lugar donde cada detalle está diseñado para tu comodidad y tranquilidad.
+                    
+                    Descubre cuál de nuestros desarrollos se adapta mejor a tu estilo de vida y da el siguiente paso hacia el hogar que siempre soñaste.
                 </p>
             </div>
         </section>

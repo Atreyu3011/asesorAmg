@@ -10,14 +10,14 @@ export const metadata: Metadata = {
 
 const ErrorPage = () => {
   const breadcrumbLinks = [
-    { href: "/", text: "Home" },
+    { href: "/", text: "Inicio" },
     { href: "/contact", text: "404" },
   ];
   return (
     <>
       <HeroSub
         title="404"
-        description="We Can't Seem to Find The Page You're Looking For."
+        description="La página a la que intentas acceder no existe."
         breadcrumbLinks={breadcrumbLinks}
       />
       <section className="bg-white pt-8 pb-20 dark:bg-darkmode">
@@ -70,17 +70,16 @@ const ErrorPage = () => {
                   </svg>
                 </div>
                 <h3 className="mb-5 text-2xl font-semibold text-midnight_text dark:text-white">
-                  We Can&#39;t Seem to Find The Page You&#39;re Looking For.
+                  No podemos encontrar la página que buscas.
                 </h3>
                 <p className="mb-8 text-base text-body-color dark:text-dark-6">
-                  Oops! The page you are looking for does not exist. It might have
-                  been moved or deleted.
+                  Oops! La página que busca no existe.
                 </p>
                 <Link
                   href="/"
                   className="rounded-md px-7 py-3 text-base font-medium text-white transition hover:bg-blue-700 bg-primary"
                 >
-                  Go To Home
+                  Ir a Inicio
                 </Link>
               </div>
             </div>

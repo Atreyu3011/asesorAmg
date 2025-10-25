@@ -12,49 +12,49 @@ type TabContent = {
 };
 
 // Define possible tab labels
-type TabLabel = 'Project Complex' | 'Project Park' | 'Project Gallery' | 'Project Villa';
+type TabLabel = 'Amenidades exclusivas' | 'Servicios' | 'Ubicaciones privilegiadas' | 'Lo mejor de lo mejor';
 
 // Define the content object with explicit types
 const content: Record<TabLabel, TabContent> = {
-    'Project Complex': {
-        title: 'Values of smart living in Vista Residence, NY',
-        description: 'Sometimes by accident, sometimes chunks as necessary making this the first true generator on the Internet.',
+    'Amenidades exclusivas': {
+        title: 'Disfruta de momentos únicos con tu familia',
+        description: 'Al adquirir un terreno con nosotros tu familia podrá disfrutar de :',
         features: [
-            'Wellness & Spa',
-            'Fitness',
-            'Conference',
-            'Library',
-            'Restaurant',
-            'Bars'
+            'Asadores',
+            'Pergolas',
+            'Palapas',
+            'Areas de juegos infantiles',
+            'Caseta de vigilancia',
+            'Entre otras amenidades que se ajustan a la personalidad de cada desarrollo'
         ],
         image: '/images/tabbar/tab-1.jpg'
     },
-    'Project Park': {
-        title: 'Project Park Overview',
-        description: 'Sometimes by accident, sometimes chunks as necessary making this the first true generator on the Internet.',
-        features: ['Gardens', 'Playgrounds', 'Walking Trails'],
+    'Servicios': {
+        title: 'Servicios diseñados para tu comodidad',
+        description: 'Nuestros desarrollos cuentan con una variedad de servicios para garantizar tu bienestar y el de tu familia:',
+        features: ['Vigilancia 24/7', 'Mantenimiento de calles y áreas comunes', 'Agua potable', 'Acceso controlado'],
         image: '/images/tabbar/tab-2.jpg'
     },
-    'Project Gallery': {
-        title: 'Explore the Gallery',
-        description: 'Sometimes by accident, sometimes chunks as necessary making this the first true generator on the Internet.',
-        features: ['Art Exhibitions', 'Cultural Events'],
+    'Ubicaciones privilegiadas': {
+        title: 'Plusvalía y comodidad en un solo lugar',
+        description: 'Nuestros desarrollos están estratégicamente ubicados para ofrecerte lo mejor en plusvalía y comodidad:',
+        features: ['Tu tranquilidad es nuestras prioridad', 'Cercanía a centros urbanos', 'Entornos naturales'],
         image: '/images/tabbar/tab-3.jpg'
     },
-    'Project Villa': {
-        title: 'Luxury Villas',
-        description: 'Sometimes by accident, sometimes chunks as necessary making this the first true generator on the Internet.',
-        features: ['Private Pools', 'Gourmet Kitchens', 'Spacious Living Areas'],
+    'Lo mejor de lo mejor': {
+        title: 'Invierte en un futuro próspero',
+        description: 'Descubre en cada uno de nuestros desarrollos terrenos exclusivos, con ubicaciones estratégicas y dimensiones ideales. Un producto premium creado para quienes no se conforman con menos que lo mejor.',
+        features: ['Mayores dimenciones', 'Ubicaciones privilegiadas'],
         image: '/images/tabbar/tab-4.jpg'
     }
 };
 
 // Define the tabs
 const tabs: { label: TabLabel, icon: string }[] = [
-    { label: 'Project Complex', icon: 'mdi:home' },
-    { label: 'Project Park', icon: 'mdi:store' },
-    { label: 'Project Gallery', icon: 'mdi:building' },
-    { label: 'Project Villa', icon: 'mdi:warehouse' }
+    { label: 'Amenidades exclusivas', icon: 'mdi:home' },
+    { label: 'Servicios', icon: 'mdi:store' },
+    { label: 'Ubicaciones privilegiadas', icon: 'mdi:building' },
+    { label: 'Lo mejor de lo mejor', icon: 'mdi:warehouse' }
 ];
 
 // Utility function to chunk an array into smaller arrays of a specified size
@@ -67,7 +67,7 @@ const chunkArray = <T,>(array: T[], chunkSize: number): T[][] => {
 };
 
 export default function Tabbar() {
-    const [activeTab, setActiveTab] = useState<TabLabel>('Project Complex');
+    const [activeTab, setActiveTab] = useState<TabLabel>('Amenidades exclusivas');
 
     const handleTabChange = (tab: TabLabel) => {
         setActiveTab(tab);
