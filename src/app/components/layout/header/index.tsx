@@ -67,7 +67,7 @@ const Header: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch('/api/layoutdata')
+        const res = await fetch(`${process.env.NEXTAPP_URL}/api/layoutdata`)
         if (!res.ok) throw new Error('Failed to fetch')
 
         const data = await res.json()

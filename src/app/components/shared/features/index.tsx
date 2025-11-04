@@ -10,8 +10,8 @@ export default function Features() {
         const fetchData = async () => {
             try {
                 const [resProperties, resPage] = await Promise.all([
-                    fetch('/api/propertydata'),
-                    fetch('/api/pagedata'),
+                    fetch(`${process.env.NEXTAPP_URL}/api/propertydata`),
+                    fetch(`${process.env.NEXTAPP_URL}/api/pagedata`),
                 ]);
 
                 if (!resProperties.ok || !resPage.ok) {

@@ -10,7 +10,7 @@ export default function DiscoverProperties() {
     useEffect(() => {
     const fetchData = async () => {
         try {
-            const res = await fetch('/api/propertydata');
+            const res = await fetch(`${process.env.NEXTAPP_URL}/api/propertydata`);
             if (!res.ok) throw new Error('Failed to fetch');
 
             const data = await res.json();
