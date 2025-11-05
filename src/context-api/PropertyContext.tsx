@@ -40,7 +40,7 @@ export const AppContextProvider: React.FC<{ children: ReactNode }> = ({ children
   useEffect(() => {
     const fetchProperties = async () => {
       try {
-        const res = await fetch(`${process.env.NEXTAPP_URL}/api/propertydata`);
+        const res = await fetch(`${process.env.NEXT_PUBLIC_NEXTAPP_URL}/api/propertydata`);
         const data: propertyData[] = await res.json();
         setAllProperties(data);
         setProperties(data); // set initially unfiltered list

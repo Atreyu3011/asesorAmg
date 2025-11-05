@@ -18,7 +18,7 @@ export default function AdvanceSearch({ category }: { category?: string }) {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await fetch(`${process.env.NEXTAPP_URL}/api/pagedata`)
+                const res = await fetch(`${process.env.NEXT_PUBLIC_NEXTAPP_URL}/api/pagedata`)
                 if (!res.ok) throw new Error('Failed to fetch')
 
                 const data = await res.json()
