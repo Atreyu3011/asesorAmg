@@ -36,7 +36,7 @@ export default function Availability() {
                                 <td className="py-2 sm:py-4 px-2">$3,834</td>
                                 <td className="py-2 sm:py-4 px-2">$2,557.5</td>
                                 <td className="py-2 sm:py-4 px-2">
-                                    <Link href="/contact" className='flex items-center justify-center hover:text-primary'>
+                                    <Link href="/contacto" className='flex items-center justify-center hover:text-primary'>
                                         Saber más
                                         <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
@@ -52,7 +52,7 @@ export default function Availability() {
                                 <td className="py-2 sm:py-4 px-2">$3,792</td>
                                 <td className="py-2 sm:py-4 px-2">$2,527.7</td>
                                 <td className="py-2 sm:py-4 px-2">
-                                    <Link href="/properties/properties-list" className='flex items-center justify-center hover:text-primary'>
+                                    <Link href="/contacto" className='flex items-center justify-center hover:text-primary'>
                                         Saber más
                                         <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
@@ -68,7 +68,7 @@ export default function Availability() {
                                 <td className="py-2 sm:py-4 px-2">$5,167</td>
                                 <td className="py-2 sm:py-4 px-2">$3,444.44</td>
                                 <td className="py-2 sm:py-4 px-2">
-                                    <Link href="/properties/properties-list" className='flex items-center justify-center hover:text-primary'>
+                                    <Link href="/contacto" className='flex items-center justify-center hover:text-primary'>
                                         Saber más
                                         <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
@@ -84,7 +84,7 @@ export default function Availability() {
                                 <td className="py-2 sm:py-4 px-2">$3,792</td>
                                 <td className="py-2 sm:py-4 px-2">$2,527.78</td>
                                 <td className="py-2 sm:py-4 px-2">
-                                    <Link href="/properties/properties-list" className='flex items-center justify-center hover:text-primary'>
+                                    <Link href="/contacto" className='flex items-center justify-center hover:text-primary'>
                                         Saber más
                                         <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
@@ -100,7 +100,7 @@ export default function Availability() {
                                 <td className="py-2 sm:py-4 px-2">$5,125</td>
                                 <td className="py-2 sm:py-4 px-2">$3,416.67</td>
                                 <td className="py-2 sm:py-4 px-2">
-                                    <Link href="/properties/properties-list" className='flex items-center justify-center hover:text-primary'>
+                                    <Link href="/contacto" className='flex items-center justify-center hover:text-primary'>
                                         Saber más
                                         <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
@@ -116,7 +116,7 @@ export default function Availability() {
                                 <td className="py-2 sm:py-4 px-2">$4,209</td>
                                 <td className="py-2 sm:py-4 px-2">$2,805.56</td>
                                 <td className="py-2 sm:py-4 px-2">
-                                    <Link href="/properties/properties-list" className='flex items-center justify-center hover:text-primary'>
+                                    <Link href="/contacto" className='flex items-center justify-center hover:text-primary'>
                                         Saber más
                                         <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
@@ -132,7 +132,7 @@ export default function Availability() {
                                 <td className="py-2 sm:py-4 px-2">$4,209</td>
                                 <td className="py-2 sm:py-4 px-2">$2,805.56</td>
                                 <td className="py-2 sm:py-4 px-2">
-                                    <Link href="/properties/properties-list" className='flex items-center justify-center hover:text-primary'>
+                                    <Link href="/contacto" className='flex items-center justify-center hover:text-primary'>
                                         Saber más
                                         <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
@@ -148,7 +148,7 @@ export default function Availability() {
                                 <td className="py-2 sm:py-4 px-2">$3,750</td>
                                 <td className="py-2 sm:py-4 px-2">$2,500</td>
                                 <td className="py-2 sm:py-4 px-2">
-                                    <Link href="/properties/properties-list" className='flex items-center justify-center hover:text-primary'>
+                                    <Link href="/contacto" className='flex items-center justify-center hover:text-primary'>
                                         Saber más
                                         <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
@@ -164,7 +164,7 @@ export default function Availability() {
                                 <td className="py-2 sm:py-4 px-2">$3,750</td>
                                 <td className="py-2 sm:py-4 px-2">$2,500</td>
                                 <td className="py-2 sm:py-4 px-2">
-                                    <Link href="/properties/properties-list" className='flex items-center justify-center hover:text-primary'>
+                                    <Link href="/contacto" className='flex items-center justify-center hover:text-primary'>
                                         Saber más
                                         <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
@@ -180,7 +180,7 @@ export default function Availability() {
                                 <td className="py-2 sm:py-4 px-2">$3,750</td>
                                 <td className="py-2 sm:py-4 px-2">$2,500</td>
                                 <td className="py-2 sm:py-4 px-2">
-                                    <Link href="/properties/properties-list" className='flex items-center justify-center hover:text-primary'>
+                                    <Link href="/contacto" className='flex items-center justify-center hover:text-primary'>
                                         Saber más
                                         <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>

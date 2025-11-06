@@ -96,7 +96,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact" className="mb-3 inline-block text-base text-gray hover:text-white">
+                  <Link href="/contacto" className="mb-3 inline-block text-base text-gray hover:text-white">
                     Contacto
                   </Link>
                 </li>

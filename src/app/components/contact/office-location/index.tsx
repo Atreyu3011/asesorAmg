@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const Location = () => {
   const breadcrumbLinks = [
-    { href: "/", text: "Home" },
-    { href: "/contact", text: "Contact" },
+    { href: "/", text: "Inicio" },
+    { href: "/contacto", text: "Contacto" },
   ];
   return (
     <>

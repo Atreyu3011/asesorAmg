@@ -18,7 +18,7 @@ const headerData = [
   //     { label: "Blog Details", href: "/blogs/blog_1" },
   //   ],
   // },
-  { label: "Contacto", href: "/contact" },
+  { label: "Contacto", href: "/contacto" },
   // { label: "Documentation", href: "/documentation" },
 ];
 

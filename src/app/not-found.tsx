@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const ErrorPage = () => {
   const breadcrumbLinks = [
     { href: "/", text: "Inicio" },
-    { href: "/contact", text: "404" },
+    { href: "/contacto", text: "404" },
   ];
   return (
     <>
