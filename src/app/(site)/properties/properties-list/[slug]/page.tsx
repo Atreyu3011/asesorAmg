@@ -16,7 +16,8 @@ export default function Details() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch(`${process.env.NEXTAPP_URL}/api/propertydata`)
+        const baseUrl = process.env.NEXT_PUBLIC_NEXTAPP_URL || window.location.origin
+        const res = await fetch(`${baseUrl}/api/propertydata`)
         if (!res.ok) throw new Error('Failed to fetch')
 
         const data = await res.json()
@@ -45,14 +46,19 @@ export default function Details() {
       <section>
         <div className='container mx-auto dark:bg-darkmode'>
           <div className="h-[580px] max-w-5xl mx-auto w-full">
-            {item?.property_img &&
+            {item?.property_img ? (
               <Image
-                src={item?.property_img}
-                alt={item?.property_title}
+                src={item.property_img}
+                alt={item?.property_title || 'Property image'}
                 width={1000}
                 height={600}
                 className='h-full w-full object-cover rounded-lg'
-              />}
+              />
+            ) : (
+              <div className="h-full w-full flex items-center justify-center bg-gray-200 dark:bg-gray-700 rounded-lg">
+                <p className="text-gray-500 dark:text-gray-400">Loading image...</p>
+              </div>
+            )}
           </div>
         </div>
       </section>
