@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="md:col-span-4 col-span-12 flex items-center px-4 sm:px-0">
             <Link href="/" className="mb-6 inline-block max-w-40">
               <Image
-                src="/images/logo/logo-white.svg"
+                src="/images/logo/asejwhitefooter.png"
                 alt="logo"
                 width={156}
                 height={38}
@@ -29,10 +29,13 @@ const Footer = () => {
                 Av. Aquiles Serdán 9, Centro, 81200 Los Mochis, Sinaloa.
               </p>
               <div className="flex items-center gap-2">
-                <a
+                <a 
                   aria-label="social link"
-                  href="/#"
+                  href="https://www.facebook.com/alejandro.gonzalezmurguia.3"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-1 rounded-md text-midnight_text bg-white bg-opacity-50 hover:bg-primary"
+                  
                 >
                   <svg
                     width="16"
@@ -107,23 +110,23 @@ const Footer = () => {
                 Búsquedas populares
               </h4>
               <ul>
-                <li onClick={() => updateFilter('category', 'apartment')}>
-                  <Link href="/properties/properties-list?category=apartment" className="mb-3 inline-block text-base text-gray hover:text-white">
+                <li onClick={() => updateFilter('location', 'Huatabampo, Sonora')}>
+                  <Link href="/properties/properties-list" className="mb-3 inline-block text-base text-gray hover:text-white">
                     Terrenos en la playa
                   </Link>
                 </li>
                 <li onClick={() => updateFilter('category', 'house')}>
-                  <Link href="/properties/properties-list?category=house" className="mb-3 inline-block text-base text-gray hover:text-white">
+                  <Link href="/properties/properties-list" className="mb-3 inline-block text-base text-gray hover:text-white">
                     Terrenos en el río
                   </Link>
                 </li>
                 <li onClick={() => updateFilter('category', 'office')}>
-                  <Link href="/properties/properties-list?category=office" className="mb-3 inline-block text-base text-gray hover:text-white">
+                  <Link href="/properties/properties-list" className="mb-3 inline-block text-base text-gray hover:text-white">
                     Terrenos en Mazatlán
                   </Link>
                 </li>
                 <li onClick={() => updateFilter('category', 'shop')}>
-                  <Link href="/properties/properties-list?category=shop" className="mb-3 inline-block text-base text-gray hover:text-white">
+                  <Link href="/properties/properties-list" className="mb-3 inline-block text-base text-gray hover:text-white">
                     Terrenos en Oaxaca
                   </Link>
                 </li>

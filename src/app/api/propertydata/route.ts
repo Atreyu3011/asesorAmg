@@ -131,27 +131,6 @@ const property: propertyData[] = [
     slug: "haciendamonaco"
   },
   {
-    id: '8',
-    property_img: "/images/properties/celestino.jpeg",
-    property_title: "Nuevo Celestino",
-    property_price: "Desde $95,025",
-    category: "Nuevo Celestino",
-    category_img: "/images/property_option/celestino.png",
-    rooms: 10,
-    bathrooms: 4,
-    location: "Celestino Gasca, La Cruz de Elota, Sinaloa",
-    livingArea: "200m² en adelante",
-    tag: "Explícame todo",
-    check: true,
-    status: "Buy",
-    type: "Commercial",
-    beds: 2,
-    garages: 4,
-    region: "north",
-    name: "Nuevo Celestino",
-    slug: "nuevocelestino"
-  },
-  {
     id: '7',
     property_img: "/images/properties/napoles2.jpeg",
     property_title: "Hacienda Nápoles 1",
