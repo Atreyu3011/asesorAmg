@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="md:col-span-4 col-span-12 flex items-center px-4 sm:px-0">
             <Link href="/" className="mb-6 inline-block max-w-40">
               <Image
-                src="/images/logo/asejwhitefooter.png"
+                src="/images/logo/asejinfooterwhite.png"
                 alt="logo"
                 width={156}
                 height={38}
