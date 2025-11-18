@@ -115,17 +115,17 @@ const Footer = () => {
                     Terrenos en la playa
                   </Link>
                 </li>
-                <li onClick={() => updateFilter('category', 'house')}>
+                <li onClick={() => updateFilter('location', 'San Blas, El Fuerte, Sinaloa')}>
                   <Link href="/properties/properties-list" className="mb-3 inline-block text-base text-gray hover:text-white">
                     Terrenos en el río
                   </Link>
                 </li>
-                <li onClick={() => updateFilter('category', 'office')}>
+                <li onClick={() => updateFilter('location', 'Mazatlán, Sinaloa')}>
                   <Link href="/properties/properties-list" className="mb-3 inline-block text-base text-gray hover:text-white">
                     Terrenos en Mazatlán
                   </Link>
                 </li>
-                <li onClick={() => updateFilter('category', 'shop')}>
+                <li onClick={() => updateFilter('location', 'Santa María Huatulco, Oaxaca')}>
                   <Link href="/properties/properties-list" className="mb-3 inline-block text-base text-gray hover:text-white">
                     Terrenos en Oaxaca
                   </Link>

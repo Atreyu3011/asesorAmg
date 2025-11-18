@@ -9,6 +9,12 @@ import Footer from "./components/layout/footer";
 import ScrollToTop from "./components/scroll-to-top";
 import Header from "./components/layout/header";
 import SessionProviderComp from "./provider/SessionProviderComp";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Asesor Ejidal",
+  description: "Asesor Ejidal Inmobiliario",
+};
 
 export default function RootLayout({
   children,
