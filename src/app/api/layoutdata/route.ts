@@ -23,8 +23,28 @@ const headerData = [
 ];
 
 export const GET = async () => {
-  return NextResponse.json({
-    headerData
+  return NextResponse.json(
+    {
+      headerData
+    },
+    {
+      headers: {
+        'Access-Control-Allow-Origin': 'https://www.asesorejidal.com',
+        'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+      },
+    }
+  );
+};
+
+export const OPTIONS = async () => {
+  return new NextResponse(null, {
+    status: 200,
+    headers: {
+      'Access-Control-Allow-Origin': 'https://www.asesorejidal.com',
+      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+    },
   });
 };
 

@@ -217,5 +217,25 @@ const property: propertyData[] = [
 ];
 
 export async function GET() {
-  return NextResponse.json(property);
+  return NextResponse.json(
+    property,
+    {
+      headers: {
+        'Access-Control-Allow-Origin': 'https://www.asesorejidal.com',
+        'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+      },
+    }
+  );
+}
+
+export async function OPTIONS() {
+  return new NextResponse(null, {
+    status: 200,
+    headers: {
+      'Access-Control-Allow-Origin': 'https://www.asesorejidal.com',
+      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+    },
+  });
 }
