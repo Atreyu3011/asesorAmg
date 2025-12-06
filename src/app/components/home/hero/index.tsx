@@ -41,7 +41,7 @@ const Hero = () => {
     }
     setError('');
     updateFilter('location', location);
-    updateFilter('tag', 'sell');
+    updateFilter('status', 'venta');
     router.push(`/properties/properties-list`);
   };
 
@@ -52,7 +52,7 @@ const Hero = () => {
     }
     setError('');
     updateFilter('location', location);
-    updateFilter('tag', 'Buy');
+    updateFilter('status', 'venta');
     router.push(`/properties/properties-list`);
   };
 
