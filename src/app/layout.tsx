@@ -10,6 +10,7 @@ import ScrollToTop from "./components/scroll-to-top";
 import Header from "./components/layout/header";
 import SessionProviderComp from "./provider/SessionProviderComp";
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Asesor Ejidal",
@@ -35,6 +36,7 @@ export default function RootLayout({
             <Header />
             <NextTopLoader />
             {children}
+            <Analytics />
             <Footer />
           </Aoscompo>
           <ScrollToTop />
