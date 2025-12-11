@@ -11,6 +11,7 @@ import Header from "./components/layout/header";
 import SessionProviderComp from "./provider/SessionProviderComp";
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Asesor Ejidal",
@@ -25,6 +26,19 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${dmsans.className}`}>
+        {/* Google tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17780853225"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17780853225');
+          `}
+        </Script>
       <AppContextProvider>
       <SessionProviderComp>
         <ThemeProvider

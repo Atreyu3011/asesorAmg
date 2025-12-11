@@ -6,6 +6,23 @@ import { PropertyContext } from '@/context-api/PropertyContext';
 
 const Footer = () => {
   const { updateFilter } = useContext(PropertyContext)!;
+  
+  // Función para rastrear conversiones de Google Ads
+  const trackConversion = (conversionLabel: string) => {
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'conversion', {
+        'send_to': 'AW-17780853225/' + conversionLabel,
+        'value': 1.0,
+        'currency': 'MXN'
+      });
+    }
+  };
+
+  // Handler para clics en teléfono
+  const handlePhoneClick = () => {
+    trackConversion('phone_click');
+  };
+
   return (
     <footer className="relative z-10 bg-midnight_text dark:bg-semidark">
       <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md pt-10 pb-5 px-0 sm:px-6 lg:px-8">
@@ -141,7 +158,7 @@ const Footer = () => {
             <div className="flex lg:flex-nowrap flex-wrap lg:flex-row lg:gap-11 gap-4 text-base sm:text-lg md:text-xl text-black text-opacity-50">
               <p className="text-white">
                 Tel :
-                <Link href="#" className="text-gray hover:text-white"> (668) 168 8415</Link>
+                <Link href="tel:6681688415" onClick={handlePhoneClick} className="text-gray hover:text-white"> (668) 168 8415</Link>
               </p>
               <p className="text-white">
                 Email :

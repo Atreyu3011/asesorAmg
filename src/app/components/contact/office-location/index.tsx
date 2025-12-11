@@ -1,7 +1,23 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 
 const Location = () => {
+  // Función para rastrear conversiones de Google Ads
+  const trackConversion = (conversionLabel: string) => {
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'conversion', {
+        'send_to': 'AW-17780853225/' + conversionLabel,
+        'value': 1.0,
+        'currency': 'MXN'
+      });
+    }
+  };
+
+  // Handler para clics en teléfono
+  const handlePhoneClick = () => {
+    trackConversion('phone_click');
+  };
   const breadcrumbLinks = [
     { href: "/", text: "Inicio" },
     { href: "/contacto", text: "Contacto" },
@@ -20,7 +36,7 @@ const Location = () => {
                     </div>
                     <div className="col-span-3">
                         <Link href="mailto:headoffice@property.com" className="text-xl text-white font-medium underline">AsesorAMG@gmail.com</Link>
-                        <Link href="tel:731-621-5503" className="text-xl text-white text-opacity-80 flex items-center gap-2 hover:text-opacity-100 w-fit"><span className="text-white !text-opacity-40">Teléfono</span>668 168 8415</Link>
+                        <Link href="tel:6681688415" onClick={handlePhoneClick} className="text-xl text-white text-opacity-80 flex items-center gap-2 hover:text-opacity-100 w-fit"><span className="text-white !text-opacity-40">Teléfono</span>668 168 8415</Link>
                     </div>
                 </div>
                 <div className="grid md:grid-cols-6 lg:grid-cols-9 grid-cols-1 gap-7 pt-12">
@@ -32,7 +48,7 @@ const Location = () => {
                     </div>
                     <div className="col-span-3">
                         <Link href="mailto:Office@property.com" className="text-xl text-white font-medium underline">AsesorAMG@gmail.com</Link>
-                        <Link href="tel:731-235-7993" className="text-xl text-white text-opacity-80 text-IceBlue flex items-center gap-2 hover:text-opacity-100 w-fit"><span className="text-white !text-opacity-40">Teléfono</span>668 168 8415</Link>
+                        <Link href="tel:6681688415" onClick={handlePhoneClick} className="text-xl text-white text-opacity-80 text-IceBlue flex items-center gap-2 hover:text-opacity-100 w-fit"><span className="text-white !text-opacity-40">Teléfono</span>668 168 8415</Link>
                     </div>
                 </div>
             </div>
